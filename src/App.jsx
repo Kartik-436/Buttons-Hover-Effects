@@ -10,6 +10,7 @@ import Btn7 from './components/Btn7/Btn7';
 import Btn8 from './components/Btn8/Btn8';
 import Btn9 from './components/Btn9/Btn9';
 import Btn10 from './components/Btn10/Btn10';
+import Btn11 from './components/Btn11/Btn11';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
       <Btn8/>
       <Btn9/>
       <Btn10/>
+      <Btn11/>
     </div>
   )
 }
