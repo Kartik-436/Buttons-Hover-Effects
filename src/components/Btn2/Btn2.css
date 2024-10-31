@@ -24,8 +24,8 @@
 }
 
 #Btn2:hover::before{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 }
 
 #Btn2:hover span{
