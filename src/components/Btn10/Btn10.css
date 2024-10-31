@@ -1,0 +1,58 @@
+#Btn10 {
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    z-index: 1;
+}
+
+#Btn10::before,
+#Btn10::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(20deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#Btn10::before {
+    left: -10px;
+    background: #58c7ff;
+}
+
+#Btn10::after {
+    right: -10px;
+    background: #0af;
+}
+
+#Btn10:hover::before,
+#Btn10:hover::after {
+    width: 56%;
+    box-shadow: 0 0 5px 0 #0af;
+    filter: blur(1px);
+}
+
+#Btn10:hover span {
+    color: #111;
+    transition: 0.3s;
+}
+
+#Btn10 span {
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 24px;
+    transition: all 0.3s ease-in;
+    text-transform: uppercase;
+}
+
+#Btn10:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 0px 1000px 0px whitesmoke;
+}
