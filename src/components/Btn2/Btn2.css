@@ -1,0 +1,45 @@
+#Btn2{
+    position: relative;
+    display: inline-flex;
+    padding: 20px 50px;
+    background-color: bisque;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+#Btn2::before{
+    content: "";
+    position: absolute;
+    top:var(--y);
+    left:var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: #0af;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+#Btn2:hover::before{
+    width: 400px;
+    height: 400px;
+}
+
+#Btn2:hover span{
+    color: whitesmoke;
+}
+
+#Btn2 span{
+    position: relative;
+    z-index: 1;
+    color: #111;
+    font-weight: 600;
+    font-size: large;
+}
+
+#Btn2:hover{
+    box-shadow: 0px 0px 1000px 0px whitesmoke;
+}

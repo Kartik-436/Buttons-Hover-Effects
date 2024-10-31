@@ -1,0 +1,39 @@
+#Btn4{
+    background-color: bisque;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#Btn4::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0af;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+#Btn4:hover::before{
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(100%);
+}
+
+#Btn4:hover{
+    color: white;
+    box-shadow: 0px 0px 1000px 0px whitesmoke;
+}

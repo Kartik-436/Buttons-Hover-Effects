@@ -1,0 +1,73 @@
+#Btn8{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+#Btn8 span{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+#Btn8 .liquid{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 200%;
+    background: #0af;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+#Btn8:hover .liquid{
+    top: -60px;
+    transition: all 0.5s ease-in-out;
+}
+
+#Btn8 .liquid::before, #Btn8 .liquid::after{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -92%);
+}
+
+#Btn8 .liquid::before{
+    border-radius: 45%;
+    background: rgba(0, 0, 0, 1);
+    animation: Wave 5s linear infinite;
+}
+
+#Btn8 .liquid::after{
+    border-radius: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    animation: Wave 10s linear infinite;
+}
+
+@keyframes Wave {
+    0% {
+        transform: translate(-50%, -92%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -92%) rotate(360deg);
+    }
+}
+
+#Btn8:hover{
+    box-shadow: 0px 0px 1000px 0px whitesmoke;
+}

@@ -1,0 +1,39 @@
+#Btn3{
+    background-color: bisque;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    color: black;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+#Btn3::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid bisque;
+    z-index: -1;
+    transition: top 0.4s ease-in-out, left 0.4s ease-in-out, right 0.4s ease-in-out, bottom 0.4s ease-in-out;
+}
+
+#Btn3:hover::before,
+#Btn3:focus::before{
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+}
+
+#Btn3:hover{
+    box-shadow: 0px 0px 1000px 0px whitesmoke;
+}
